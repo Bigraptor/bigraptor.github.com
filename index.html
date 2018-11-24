@@ -4,26 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel = "stylesheet" href = "css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel = "stylesheet" type = "text/css" href = "css/index.css">
     <title>Bigraptor PortFolio</title>
 </head>
 <body>
     <section class = "scene one">
-        <header class = "scene1-header">
+        <header class = "scene1_header">
             Welcome!<br>
             Bigraptor's PortFolio
         </header>
         <div class = "menu">
             <ul>
-                <li>About Bigraptor</li>
-                <li>PortFolio</li>
+                <li id = "menu_1">About Bigraptor</li>
+                <li id = "menu_2">PortFolio</li>
             </ul>
         </div>
     </section>
     <section class = "two">
         <div class = "wrapper">
+            <div class = "profile">
+                <img src = "images/profile.jpeg">
+            </div>
+            <div class = "sub_menu">
+                <a href = "https://github.com/Bigraptor"><div><i class = "fab fa-github"></i></div></a>
+                <div><i class = "fas fa-envelope"></i></div>
+            </div>
             <div class = "two-title">
-                Tech Stack
+                This is Bigraptor's Tech Stack.<br>
+                I have used it once.
             </div>
             <div class = "two-content">
                 <div class = "img1-wrapper">
@@ -55,5 +64,8 @@
             </div>
         </div>
     </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
