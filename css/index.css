@@ -19,7 +19,6 @@ a{
     text-decoration: none;
     color: black;
 }
-
 .scene{
     padding-top: 0.1rem; /* 마진병합을 막기위한 패딩값 */
     height: 100vh;
@@ -35,10 +34,6 @@ a{
 
 .two{
     background: linear-gradient(to right, #ece9e6, #ffffff);
-    /* background-image: url(../images/background2.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; */
 }
 
 .scene1_header{
@@ -62,6 +57,19 @@ a{
     transform: translateX(-50%);
     text-align: center;
 }
+
+@media(max-width: 686px){
+    .scene{
+        background-size: 30% 30%;
+    }
+    #menu_1, #menu_2{
+        font-size: 1.2rem;
+    }
+    .scene1_header{
+        font-size: 2.5rem;
+    }
+}
+
 #menu_1, #menu_2{
     display: none;
 }
@@ -195,6 +203,7 @@ a{
     border: 1px solid rgb(230, 228, 228);
     border-radius: 1%;
     width: 90%;
+    height: 90%;
     margin: 0 auto;
     background: linear-gradient(90deg, rgba(244,229,232,1) 47%, rgba(221,227,234,1) 89%);
     position: fixed;
@@ -204,9 +213,10 @@ a{
     z-index: 2;
     display: none;
 }
+
 .modalWrapper{
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
     display: flex;
     background-color: rgb(240, 236, 240);
 }
@@ -240,7 +250,7 @@ a{
     font-size: 2.4rem;
     font-weight: 800;
     letter-spacing: 0.5rem;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
 }
 .modalPhoto{
     margin-left: 2rem;
@@ -249,9 +259,9 @@ a{
 .modalPhoto img{
     box-shadow: 3px 3px 2px 0px rgba(168,159,168,1);
     width: 100%;
-    height: 120%;
+    height: 110%;
     position: relative;
-    top: -10%;
+    top: -5%;
 }
 .modalContentsWrapper{
     width: 70%;
@@ -267,4 +277,21 @@ a{
 }
 .tag{
     font-weight: 800;
+}
+
+
+@media(max-height: 680px), (max-width: 970px){
+    .modalHeader{
+        font-size: 1.5rem;
+    }
+    .modalContentsWrapper{
+        width: 100%;
+    }
+
+    .modalWrapper{
+        flex-direction: column;
+    }
+    .modalContents{
+        font-size: 1.1rem;
+    }
 }
