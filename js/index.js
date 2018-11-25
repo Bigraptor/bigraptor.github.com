@@ -5,3 +5,10 @@ $(document).ready(
         $('#menu_2').delay(2500).fadeIn(2000);
     }
 );
+
+function show(){
+    $('.aboutModal').show(800);
+}
+function hide(){
+    $('.aboutModal').hide(800);
+}
