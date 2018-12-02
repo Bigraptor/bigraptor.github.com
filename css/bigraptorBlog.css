@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+}
+header{
+    font-size: 2rem;
+    display: flex;
+    height: 5rem;
+    align-items: center;
+}
+
+
+
+.logo{
+    margin: 0 auto;
+}
